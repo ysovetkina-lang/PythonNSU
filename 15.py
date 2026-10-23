@@ -1,6 +1,8 @@
-a = 1
-b = 1
-c = 7
-d = c * 7 * 7
-e = d * 7
-print(a + b + c + d + e)
+n, k, m = map(int, input().split())
+d = abs(k - m)
+a = d - 1
+b = n - d - 1
+if a < b:
+    print(a)
+else:
+    print(b)

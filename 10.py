@@ -1,6 +1,5 @@
-t = float(input())
-s = 96
-g = s / 16
-p = 48
-gp = t - s * p
-print(gp / g)
+n = int(input())
+if n % 2 == 0:
+    print("Да")
+else:
+    print("Нет")

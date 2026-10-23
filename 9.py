@@ -1,10 +1,45 @@
-narrator = 1
-man = 1
-wives = 7
-bags = wives * 7
-cats = bags * 7
-kittens = cats * 7
-
-people = narrator + man + wives
-animals = cats + kittens
-print(people + animals)
+a = input("Собака короткошерстной породы? ")
+if a.lower() == "да":
+    b = input("Рост собаки более 60 см? ")
+    if b.lower() == "да":
+        c = input("У собаки мощный хвост? ")
+        if c.lower() == "да":
+            print("Доберман")
+        else:
+            print("Левретка")
+    else:
+        c = input("У собаки длинные уши? ")
+        if c.lower() == "да":
+            print("Джек-рассел-терьер")
+        else:
+            d = input("У собаки короткие лапы? ")
+            if d.lower() == "да":
+                print("Мопс")
+            else:
+                print("Чихуахуа")
+else:
+    b = input("Рост собаки более 60 см? ")
+    if b.lower() == "да":
+        c = input("У собаки доброжелательный нрав? ")
+        if c.lower() == "да":
+            print("Золотистый ретривер")
+        else:
+            print("Немецкая овчарка")
+    else:
+        c = input("У собаки рост менее 70 см? ")
+        if c.lower() == "да":
+            d = input("У собаки длинные уши? ")
+            if d.lower() == "да":
+                e = input("Спаниель с большими лохматыми ушами? ")
+                if e.lower() == "да":
+                    print("Кокер-спаниель")
+                else:
+                    print("Кавалер кинг чарльз спаниель")
+            else:
+                print("Колли")
+        else:
+            d = input("У собаки длинная шерсть? ")
+            if d.lower() == "да":
+                print("Ирландский сеттер")
+            else:
+                print("Афганская борзая")
