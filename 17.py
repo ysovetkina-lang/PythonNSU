@@ -1,5 +1,4 @@
-a, b = map(float, input().split("*"))
-if a ** 2 + b ** 2 <= 13 ** 2:
-    print("Да")
-else:
-    print("Нет")
+n = float(input())
+while n >= 2:
+    n = n ** 0.5
+    print(f"{n:.3f}")

@@ -1,9 +1,7 @@
 n = int(input())
-d1 = n // 1000
-d4 = n % 10
-d2 = (n - d1*1000) // 100
-d3 = (n // 10) % 10
-if d1 == d4 and d2 == d3:
-    print("настоящее")
+while n > 1 and n % 2 == 0:
+    n = n // 2
+if n == 1:
+    print("верно")
 else:
-    print("кривое")
+    print("неверно")

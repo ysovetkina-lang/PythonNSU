@@ -1,10 +1,8 @@
-a, b = map(float, input().split('*'))
-c, d, e = map(float, input().split('*'))
-minh = min(a, b)
-maxh = max(a, b)
-if (min(c, d) <= minh and max(c, d) <= maxh) or \
-   (min(c, e) <= minh and max(c, e) <= maxh) or \
-   (min(d, e) <= minh and max(d, e) <= maxh):
-    print("Да")
-else:
-    print("Нет")
+x = int(input())
+c = 0
+for a in range(1, int(x ** 0.5) + 1):
+    b2 = x - a * a
+    b = int(b2 ** 0.5)
+    if b * b == b2 and a <= b:
+        c += 1
+print(c)

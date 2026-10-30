@@ -1,17 +1,7 @@
-a, b, c = map(int, input().split())
-if a >= b and a >= c:
-    print(a)
-elif b >= a and b >= c:
-    print(b)
-else:
-    print(c)
-
-    #или
-
-a, b, c = map(int, input().split())
-best = a
-if b > best:
-    best = b
-if c > best:
-    best = c
-print(best)
+n=int(input())
+v=[]
+a=1
+while a**3<=n:
+    v.append(a**3)
+    a+=1
+print(*v)

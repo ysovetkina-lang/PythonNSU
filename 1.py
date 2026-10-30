@@ -1,6 +1,9 @@
-a = input("Первое слово: ").strip()
-b = input("Второе слово: ").strip()
-if a.lower() == "генрих" and b.lower() == "герц":
-    print("Верно")
-else:
-    print("Неверно")
+c=0
+for i in range(100,1000):
+    if i % 17 == 0:
+        c+=1
+        print(i, end=" ")
+print()
+print(c)
+
+

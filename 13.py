@@ -1,18 +1,3 @@
-w = float(input())
-h = float(input())
-b = (w * 0.453592) / ((h * 0.0254) ** 2)
-b = round(b, 2)
-if b < 16:
-    print("выраженный дефицит массы тела")
-elif b < 18.5:
-    print("недостаточная масса тела")
-elif b < 25:
-    print("норма")
-elif b < 30:
-    print("избыточная масса тела")
-elif b < 35:
-    print("ожирение первой степени")
-elif b < 40:
-    print("ожирение второй степени")
-else:
-    print("ожирение третьей степени")
+n = int(input())
+for i in range(1, n + 1):
+    print(" " * (n - i) + "*" * i)

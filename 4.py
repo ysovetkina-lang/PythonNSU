@@ -1,7 +1,5 @@
-a, b = map(int, input().split(':'))
-if a > b:
-    print(1)
-elif a < b:
-    print(2)
-else:
-    print(0)
+x = int(input())
+s = 0
+for i in range(1, x + 1):
+    s = s + i
+print(s)

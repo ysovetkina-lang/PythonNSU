@@ -1,5 +1,5 @@
-year = int(input())
-if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
-    print(366)
-else:
-    print(365)
+n = int(input())
+f = 1
+while f <= n:
+    print(f)
+    f = f * 2
